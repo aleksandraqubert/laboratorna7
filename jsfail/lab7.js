@@ -75,17 +75,21 @@ function n(num) {
 
 
  var tr = prompt('Введи любое число' )
+ 
+
 function one (tr)
 {
-   
+    let q=1;
     var c="1";
   for(var o=1;o<tr;o++)
   {
 
 c=c+1;
-
+let ch=Number(c);
+q=q+ch;
   }
   alert(c);
+  alert(q);
   return c;
 }
-console.log(one(tr));
+one(tr);
