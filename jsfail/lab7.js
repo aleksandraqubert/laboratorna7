@@ -29,7 +29,9 @@ proverka(number1);
  Після пʼятого знайденого простого числа функція повинна повернути суму всіх пʼяти простих чисел в масиві. */
 
 function n(num) {
-    for (let i = 2, max = Math.sqrt(num); i <= max; i++) {
+    for (var i = 2, max = Math.sqrt(num); i <= max; i++) 
+    //из числа всего будет половина подходящих чисел 
+    {
       if (num % i === 0) {
         return false;
       }    
@@ -43,7 +45,7 @@ function n(num) {
   function v(num) {
    var prim = [];
     
-    for (let i = 2; i <= num; i++) {
+    for (var  i = 2; i <= num; i++) {
        
        if(a<5) {
       if (n(i)) {
